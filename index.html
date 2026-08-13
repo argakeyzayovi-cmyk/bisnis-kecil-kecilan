@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasa Desain Poster & Pembuatan PPT</title>
+    <title>Jasa Desain Poster & Presentasi PPT | TKJ</title>
     <style>
         *{
             margin: 0;
@@ -12,17 +12,20 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        /* Nuansa Biru Khas Jurusan TKJ */
         :root{
-            --utama:#2563eb;
-            --kedua:#7c3aed;
+            --biru-tua:#0F4C81;
+            --biru-utama:#1E88E5;
+            --biru-muda:#64B5F6;
+            --biru-sangat-muda:#E3F2FD;
             --putih:#ffffff;
-            --abu:#f8fafc;
-            --teks:#1e293b;
-            --bayangan:0 8px 32px rgba(0,0,0,0.1);
+            --abu-terang:#F5F9FC;
+            --teks:#2C3E50;
+            --bayangan:0 8px 32px rgba(15, 76, 129, 0.15);
         }
 
         body{
-            background: linear-gradient(135deg, #e0e7ff, #ddd6fe);
+            background: linear-gradient(135deg, var(--biru-sangat-muda), #CFE2F3);
             color: var(--teks);
             min-height: 100vh;
             padding: 20px 15px;
@@ -37,17 +40,18 @@
             text-align: center;
             padding: 35px 20px;
             margin-bottom: 30px;
+            border-bottom: 2px solid var(--biru-muda);
         }
 
         header h1{
             font-size: 2rem;
-            color: var(--utama);
+            color: var(--biru-tua);
             margin-bottom: 12px;
         }
 
         header p{
             font-size: 1.1rem;
-            color: #475569;
+            color: var(--biru-utama);
         }
 
         .pesan-utama{
@@ -59,7 +63,7 @@
             font-size: 1.2rem;
             font-weight: 500;
             margin-bottom: 35px;
-            border-left: 5px solid var(--utama);
+            border-left: 5px solid var(--biru-utama);
         }
 
         .layanan{
@@ -76,6 +80,7 @@
             box-shadow: var(--bayangan);
             text-align: center;
             transition: transform 0.3s ease;
+            border-top: 4px solid var(--biru-utama);
         }
 
         .kartu-layanan:hover{
@@ -83,13 +88,13 @@
         }
 
         .kartu-layanan h3{
-            color: var(--kedua);
+            color: var(--biru-tua);
             margin: 15px 0;
             font-size: 1.4rem;
         }
 
         .kartu-layanan p{
-            color: #64748b;
+            color: #546E7A;
             line-height: 1.6;
         }
 
@@ -102,38 +107,41 @@
         }
 
         .kontak h2{
-            color: var(--utama);
+            color: var(--biru-tua);
             margin-bottom: 20px;
         }
 
-        .nomor-wa{
+        .ig-akun{
             font-size: 1.5rem;
             font-weight: bold;
-            color: #16a34a;
+            color: var(--biru-utama);
             margin: 20px 0;
         }
 
-        .tombol-wa{
+        .tombol-ig{
             display: inline-block;
-            background: #25d366;
+            background: linear-gradient(90deg, var(--biru-tua), var(--biru-utama));
             color: var(--putih);
             padding: 14px 30px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             margin-top: 10px;
-            transition: background 0.3s ease;
+            transition: all 0.3s ease;
         }
 
-        .tombol-wa:hover{
-            background: #128c7e;
+        .tombol-ig:hover{
+            transform: scale(1.05);
+            background: linear-gradient(90deg, var(--biru-utama), var(--biru-tua));
         }
 
         footer{
             text-align: center;
             margin-top: 40px;
-            color: #475569;
+            color: #546E7A;
             font-size: 0.9rem;
+            padding-top: 15px;
+            border-top: 1px solid var(--biru-muda);
         }
     </style>
 </head>
@@ -141,11 +149,11 @@
     <div class="container">
         <header>
             <h1>Jasa Pembuatan Poster & Presentasi PPT</h1>
-            <p>Hasil rapi, menarik, dan sesuai kebutuhan kamu!</p>
+            <p>Dari Kelompok Jurusan TKJ - Hasil Rapi, Terpercaya & Profesional</p>
         </header>
 
         <div class="pesan-utama">
-            malas membuat ppt ataupun poster bisa order di kami minat chat nomor di bawah ini
+            malas membuat ppt ataupun poster bisa order di kami, kalau berminat dm ig di bawah ini yah
         </div>
 
         <div class="layanan">
@@ -161,14 +169,14 @@
         </div>
 
         <div class="kontak">
-            <h2>Hubungi Kami Sekarang</h2>
-            <p>Untuk pemesanan atau bertanya-tanya silakan hubungi nomor berikut:</p>
-            <div class="nomor-wa">083133938842</div>
-            <a href="https://wa.me/6283133938842" class="tombol-wa" target="_blank">Klik Untuk Chat WhatsApp</a>
+            <h2>Hubungi Kami</h2>
+            <p>Untuk pemesanan atau bertanya-tanya silakan kunjungi Instagram kami:</p>
+            <div class="ig-akun">@dessainin_</div>
+            <a href="https://www.instagram.com/dessainin_?igsh=MTFhdDRydmJiY2FlMw==" class="tombol-ig" target="_blank">Klik DM Sekarang</a>
         </div>
 
         <footer>
-            &copy; 2026 Jasa Desain & PPT - Semua Hak Dilindungi
+            &copy; 2026 - Jasa Desain & PPT Kelompok TKJ | Semua Hak Dilindungi
         </footer>
     </div>
 </body>
